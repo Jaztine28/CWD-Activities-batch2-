@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!--Font Awesome -->
+  <script src="https://kit.fontawesome.com/a002a763e4.js" crossorigin="anonymous"></script>"
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Carousel</title>
+</head>
+<body class="blue darken-4">
+    <!--Navigation-->
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo center">Northern lights</a>
+      </div>
+    </nav>
+
+    <div class="parallax-container">
+        <div class="parallax">
+           <img src="img/B1.jpg" alt="">
+        </div>
+     </div>
+
+<!--Carousel-->
+   <div class="carousel">
+     <a class="carousel-item" href="#one!">
+      <img src="img/M1.jpg"></a>
+     <a class="carousel-item" href="#two!">
+      <img src="img/M2.jpg"></a>
+     <a class="carousel-item" href="#three!">
+      <img src="img/M3.jpg"></a>
+     <a class="carousel-item" href="#four!">
+      <img src="img/m4.jpg"></a>
+     <a class="carousel-item" href="#five!">
+      <img src="img/M5.jpg"></a>
+     <a class="carousel-item" href="#six!">
+      <img src="img/M6.jpg"></a>
+   </div>
+    <br><br>
+<!--Full Width Slider-->
+   <div class="carousel carousel-slider">
+     <a class="carousel-item" href="#one!">
+      <img src="img/N1.jpg"></a>
+     <a class="carousel-item" href="#two!">
+      <img src="img/N2.jpg"></a>
+     <a class="carousel-item" href="#three!">
+      <img src="img/N3.jpg"></a>
+     <a class="carousel-item" href="#four!">
+      <img src="img/N4.jpg"></a>
+   </div>
+      
+<!--Content Slider-->
+
+<br><br><br>
+   <div class="carousel carousel-slider center">
+     <div class="carousel-fixed-item center">
+       <a class="btn waves-effect cyan black-text darken-text-2">button</a>
+     </div>
+     <div class="carousel-item red white-text" href="#one!">
+        <img src="img/M2.jpg" alt="" class="responsive-img">
+     </div>
+     <div class="carousel-item red white-text" href="#one!">
+        <img src="img/M1.jpg" alt="" class="responsive-img">
+     </div>
+     <div class="carousel-item red white-text" href="#one!">
+        <img src="img/M3.jpg" alt="" class="responsive-img">
+     </div>
+     <div class="carousel-item red white-text" href="#one!">
+        <img src="img/M3.jpg" alt="" class="responsive-img">
+     </div>
+   </div>  
+ 
+ <div class="parallax-container">
+    <div class="parallax">
+       <img src="img/B2.jpg" alt="">
+    </div>
+ </div>
+<!--Container Last-->
+</div>
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+   $(document).ready(function(){
+    // Floating Buttons
+    $('.fixed-action-btn').floatingActionButton();
+    // Carousel
+    $('.carousel').carousel();
+    // Full Width Slider
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+    });
+    // Init Parallax
+    $('.parallax').parallax({
+    responsiveThreshold: 0
+    });
+  });
+ </script>
+</div>
+</html>

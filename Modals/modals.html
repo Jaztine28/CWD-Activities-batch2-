@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Compiled and minified CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <!-- Font Awesome-->
+   <script src="https://kit.fontawesome.com/a002a763e4.js" crossorigin="anonymous"></script>
+   <!-- Material Icons-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+
+
+   <title>Modals</title>
+</head>
+<body class="grey darken-2">
+<!--Navbar-->
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a href="#" class="brand-logo center">HOGWARTS</a>
+      </div>
+    </nav>
+
+  <div class="cointainer">
+
+    <section class="section section-stats center">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card-panel red darken-4">
+            <img src="img/h1.jpeg" alt="" class="responsive-img">
+            <h1>Gryffindor</h1>
+            <span class="card-action">
+              <a href="#modal1" class="btn amber accent-4 waves-effect waves-light modal-trigger">Read More</a>
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel yellow darken-2">
+            <img src="img/h2.jpeg" alt="" class="responsive-img">
+            <h1>Hufflepuff</h1>
+            <span class="card-action">
+              <a href="#modal1.2" class="btn black lighten-1 waves-effect waves-light modal-trigger">Read More</a>
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel blue darken-4">
+            <img src="img/h3.jpeg" alt="" class="responsive-img">
+            <h1>Ravenclaw</h1>
+            <span class="card-action">
+              <a href="#modal1.3" class="btn brown darken-1 waves-effect waves-light modal-trigger">Read More</a>
+            </span>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card-panel green darken-4">
+            <img src="img/h4.jpeg" alt="" class="responsive-img">
+            <h1>Slytherin</h1>
+            <span class="card-action">
+              <a href="#modal1.4" class="btn grey darken-3 waves-effect waves-light modal-trigger">Read More</a>
+            </span>
+          </div>
+        </div>
+      </div>
+<!--end section-->
+    </section>
+
+    <section class="section section-stats center">
+      <div class="col s12 m6 l3">
+        <div class="card-panel blue-grey darken-2">
+          <h1>HOGWARTS</h1>
+          <span class="card-action">
+      <!--Modals with Fixed Footer-->    
+      <!-- Modal Trigger -->
+            <a href="#modal2" class="btn waves-effect waves-light btn modal-trigger">Modal2</a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-stats center">
+      <div class="row">
+      <div class="col s12 m4 l12">
+        <div class="card-panel yellow darken-5">
+          <h1>The four Houses of Hogwarts</h1>
+          <span class="card-action">
+     <!--Bottom Sheet Modals-->
+           <a href="#modal3" class="btn green modal-trigger waves-effect waves-light">Modal3</a>
+          </span>
+         </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <!-- Modal Structure 1-->
+  <div id="modal1" class="modal deep-orange white-text">
+    <div class="modal-content">
+      <h4>Gryffindor</h4>
+      <p>alued bravery, daring, nerve, and chivalry.[4] Its emblematic animal was the lion,[3] it's representative gemstone was rubies, and its colours were scarlet and gold.[2] Minerva McGonagall was the most recent Head of Gryffindor.[5] Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the House Ghost.[4] The founder of the House was Godric Gryffindor.[1] Gryffindor corresponded to the element of fire.[2</p>
+    </div>
+    <div class="modal-footer grey darken-3">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Agree</a>
+    </div>
+  </div>
+  <div id="modal1.2" class="modal yellow darken-4 white-text">
+    <div class="modal-content">
+      <h4>Hufflepuff</h4>
+      <p>valued hard work, dedication, patience, loyalty, and fair play.[4] Its emblematic animal was the badger,[3][3] it's representative gemstone was yellow diamonds, and yellow and black were its colours.[2]</p>
+    </div>
+    <div class="modal-footer grey darken-3">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Agree</a>
+    </div>
+  </div>
+  <div id="modal1.3" class="modal cyan darken-4 white-text">
+    <div class="modal-content">
+      <h4>Ravenclaw</h4>
+      <p>valued intelligence, knowledge, curiosity, creativity and wit.[4] Its emblematic animal was the eagle,[3][3] it's representative gemstone was sapphires, and its colours were blue and bronze[2]. The Ravenclaw Head of House in the 1990s was Filius Flitwick.[7]</p>
+    </div>
+    <div class="modal-footer grey darken-3">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Agree</a>
+    </div>
+  </div>
+  <div id="modal1.4" class="modal green darken-3 white-text">
+    <div class="modal-content">
+      <h4>Slytherin</h4>
+      <p>valued ambition, leadership, self-preservation, cunning and resourcefulness[4] and was founded by Salazar Slytherin.[1] Its emblematic animal was the serpent,[3][3] it's representative gemstone was emeralds, and its colours were emerald green and silver.[2]</p>
+    </div>
+    <div class="modal-footer grey darken-3">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text">Agree</a>
+    </div>
+  </div>
+
+  <!-- Modal Structure 2 -->
+  <div id="modal2" class="modal modal-trigger">
+    <div class="modal-content">
+      <h4>Hogwarts Houses</h4>
+      <p>"The four Houses are called Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. Each House has its own noble history and each has produced outstanding witches and wizards. While you are at Hogwarts, your triumphs will earn your House points, while any rule breaking will lose House points. At the end of the year, the House with the most points is awarded the House Cup, a great honour. I hope each of you will be a credit to whichever House becomes yours."
+        — Minerva McGonagall to first-year students on 1 September 1991, shortly before the Sorting Ceremony[src]
+        Hogwarts School of Witchcraft and Wizardry was divided into four Houses: Gryffindor, founded by Godric Gryffindor; Hufflepuff, founded by Helga Hufflepuff; Ravenclaw, founded by Rowena Ravenclaw; and Slytherin, founded by Salazar Slytherin.
+        Houses at Hogwarts were both the living and learning communities for its students. Each year's group of students in the same House shared the same dormitory and many classes. The houses competed throughout the school year, by earning and losing points for behaviour. The House with the most points won the House Cup. Each House also had its own Quidditch team that competed for the Inter-House Quidditch Cup. These two competitions bred rivalries between the Houses, the greatest of which was that between Gryffindor and Slytherin.</p>
+      <p> Sorting In the early days of Hogwarts, the four founders handpicked students for their Houses. When the founders worried how students would be selected after their deaths, Godric Gryffindor took his hat off and each "put some brains" in it, creating the Sorting Hat to choose future students for each House.[12] At the beginning of each school year, the magical Sorting Hat was placed on each new student's head during the Sorting Ceremony.</p>
+      <p>It is unclear if the Sorting Hat tended to place students based on qualities they valued or rather qualities they exhibited. One example of the former is Peter Pettigrew, who was sorted into Gryffindor but ultimately turned out to be quite cowardly, self-serving and corruptible. He may have been placed there because, at the time, he admired strong, brave individuals like James Potter and Sirius Black. Other examples include Vincent Crabbe and Gregory Goyle, who despite being stupid and rather lazy, were placed in Slytherin, the House of the cunning and ambitious. They flocked around Draco Malfoy, who they admired and who exhibited the traits of Slytherin. Hermione Granger, while more than clever enough for Ravenclaw, valued courage above all, and was sorted into Gryffindor, a House she said sounded "by far the best".</p>
+      <p>The Hat also appeared to take the students' wishes into account, considering how one's personal choices are very much of a reflection of the qualities that they valued in themselves.[4] Just because someone was placed in a certain House did not mean that they could not display characteristics of other Houses. Harry Potter, for instance, embodied many of the traits that were approved and appreciated by Salazar Slytherin. He was clever, resourceful and cunning, yet the Sorting Hat made him a Gryffindor because the very fact that he asked not to be in Slytherin showed that he did not belong there. A true Slytherin would not have had any doubts about whether or not it was the right House for them.[15]
+
+        One of the biggest examples of this was Severus Snape. At one point, Albus Dumbledore observed that his loyal, courageous nature was much more befitted to Gryffindor. However, as a child, Snape's sadism, disdain for Muggles, and sheer cunning and ambition may have led to his being sorted into Slytherin when he first came to Hogwarts.[16]</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+  </div>
+  <!-- Modal Structure 3-->
+  <div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Four Houses</h4>
+      <ul class="collection">
+        <li class="collection-item avatar">
+            <img src="img/h1.jpeg" alt="" class="circle">
+            <span class="title">Gryffindor</span>
+            <p>First Line <br>
+               Second Line
+            </p>
+            <a href="#" class="secondary-content">
+             <i class="material-icons">grade</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="img/h2.jpeg" alt="" class="circle">
+            <span class="title">Hufflepuff</span>
+            <p>First Line <br>
+               Second Line
+            </p>
+            <a href="#" class="secondary-content">
+             <i class="material-icons">grade</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+           <img src="img/h3.jpeg" alt="" class="circle">
+            <span class="title">Ravenclaw</span>
+            <p>First Line <br>
+               Second Line
+            </p>
+            <a href="#" class="secondary-content">
+             <i class="material-icons">grade</i>
+            </a>
+        </li>
+        <li class="collection-item avatar">
+            <img src="img/h4.jpeg" alt="" class="circle">
+            <span class="title">Slytherin</span>
+            <p>First Line <br>
+               Second Line
+            </p>
+            <a href="#" class="secondary-content">
+             <i class="material-icons">grade</i>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!--End of the container-->    
+    </div>
+
+   <!-- Jquery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified Javascript-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+
+<script>
+     $(document).ready(function(){
+        // modal
+         $('.modal').modal();
+       });
+</script>
+   
+</body>
+</html>

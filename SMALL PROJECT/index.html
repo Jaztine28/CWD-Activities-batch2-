@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!--Font Awesome -->
+  <script src="https://kit.fontawesome.com/a002a763e4.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Local CSS-->
+  <link rel="stylesheet" href="main.css">
+  
+   <title>Small Project</title>
+</head>
+<body class="orange lighten-3">
+  <!--Navigation-->>
+    <nav class="amber darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+         <a href="project.html" class="brand-logo">SAY_SEICHIEE</a>
+         <a href="#" data-target="slide-out" class="sidenav-trigger right">
+          <i class="material-icons">menu</i>
+          </a>
+         <ul class="right hide-on-med-and-down">
+           <li class="active">
+            <a href="Index.html">HOME</a>
+           </li>
+           <li>
+             <a href="#">ABOUT</a>
+           </li>
+           <li>
+             <a href="#">PROFILE</a>
+           </li>
+           <li>
+             <a href="#">GALLERY</a>
+           </li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+     <!--Sidenav-->
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+         <div class="background">
+           <img src="img/s5.jpeg">
+      </div>
+        <a href="#user"><img class="circle" src="img/s1.jpg"></a>
+        <a href="#name"><span class="white-text name">SEICHIEE</span></a>
+        <a href="#email"><span class="white-text email">Say_seichiee@gmail.com</span></a>
+      </div>
+    </li>
+      <li>
+        <a class="subheader">Profile</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">dashboard</i>
+        Dashboard</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">person</i>
+        About</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">photo_library</i>
+        Photos</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">play_circle_filled</i>
+        Videos</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Account</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">settings</i>
+        Account Settings</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">report</i>Report</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Contact Info</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">phone</i>0987-5678
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">
+          <i class="material-icons">pets</i>Seichiee
+        </a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a>Log out</a>
+      </li>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Section: Stats-->
+  <section class="section section-stats center">
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card-panel orange accent-1 white-text center">
+          <i class="material-icons medium">airplay</i>
+           <h1>Visitor</h1>
+           <h3 class="count">2000</h3>
+           <div class="progress">
+            <div class="indeterminate amber darken-4"></div>
+        </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel orange accent-2 white-text center">
+          <i class="material-icons medium">pets</i>
+          <h1> Blog Post</h1>
+           <h3 class="count">1800</h3>
+           <div class="progress">
+            <div class="indeterminate amber darken-3"></div>
+        </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel orange accent-3 white-text center">
+          <i class="material-icons medium">turned_in</i>
+          <h1>Comments</h1>
+           <h3 class="count">560</h3>
+           <div class="progress">
+            <div class="indeterminate amber darken-2"></div>
+        </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card-panel orange accent-4 white-text center">
+          <i class="material-icons medium">verified_user</i>
+          <h1>Users</h1>
+           <h3 class="count">820</h3>
+           <div class="progress">
+            <div class="indeterminate amber darken-1"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Section: Visitor-->
+  <section class="section section-visitors orange darken-1">
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <div id="chartContainer" style="height: 300px; width: 100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 l4">
+      <!--Latest Comments-->
+         <ul class="collection with-header latest-comments">
+          <li class="collection-header">
+            <h4>Latest Comments</h4>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/s2.jpg" alt="" class="circle">
+            <span class="title">YUKI</span>
+            <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi consequatur deserunt maxime natus officiis distinctio vero enim aspernatur, numquam similique veritatis inventore dolorum in veniam et corporis, officia quia.</p>
+          <a onclick="M.toast({
+            html: 'Comment Approved',
+             outDuration: 2000})" class="approve green-text">Approve</a> |
+          <a onclick="M.toast({html: 'Comment Deny'})" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/s3.jpg" alt="" class="circle">
+            <span class="title">Cookie</span>
+            <p class="truncate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi consequatur deserunt maxime natus officiis distinctio vero enim aspernatur, numquam similique veritatis inventore dolorum in veniam et corporis, officia quia.</p>
+          <a onclick="M.toast({html: 'Comment Approved'})" class="approve green-text">Approve</a> |
+          <a onclick="M.toast({html: 'Comment Deny'})" class="deny red-text">Deny</a>
+          </li>
+         </ul>
+        </div>
+      </div>
+   <!--last-->
+    </div>
+  </section>
+
+
+<!--preLoaders-->
+  <div class="preloader-wrapper big active loader">
+    <div class="spinner-layer spinner-blue">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  
+    <div class="spinner-layer spinner-red">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  
+    <div class="spinner-layer spinner-yellow">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  
+    <div class="spinner-layer spinner-green">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Section: Recent Posts & Todos-->
+  <section class="section section-recent">
+   <div class="row">
+    <div class="col s12 m6 l8">
+      <div class="card">
+        <div class="card-content orange darken-3 white-text">
+          <span class="card-tile">Recent Post</span>
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cookie</td>
+                <td>Shih tzu</td>
+                <td>
+                  <a href="details.html" class="btn grey darken-3">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Harnash</td>
+                <td>Pomeranian</td>
+                <td>
+                  <a href="details.html" class="btn grey darken-3">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Seichiee</td>
+                <td>Schweenie</td>
+                <td>
+                  <a href="details.html" class="btn grey darken-3">Details</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Todos-->
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content grey lighten-4">
+           <span class="card-title">Quick Tools</span>
+           <form id="todo-form">
+             <div class="input-field">
+               <input type="text" id="todo" placeholder="Add Todo...">
+            </div>
+           </form>
+           <ul class="collection todos">
+            <li class="collection-item">
+              <div>Todo one
+                 <a href="#!" class="secondary-content delete">
+                  <i class="material-icons purple-text darken-2">close</i>
+                  </a>
+              </div>    
+            </li>  
+            <li class="collection-item">
+              <div>Todo two
+                 <a href="#!" class="secondary-content delete">
+                  <i class="material-icons purple-text darken-2">close</i>
+                 </a>
+              </div>
+            </li>
+           </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+<!--Floating action Bottons-->
+   <div class="fixed-action-btn toolbar">
+     <a class="btn-floating btn-large yellow darken-3">
+       <i class="large material-icons">mode_edit</i>
+     </a>
+     <ul>
+       <li>
+        <a href="#post-modal" class="yellow modal-trigger">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+       <li>
+        <a class="orange">
+          <i class="material-icons">format_quote</i>
+        </a>
+      </li>
+       <li><a class="amber">
+        <i class="material-icons">publish</i>
+      </a>
+    </li>
+       <li>
+        <a class="orange lighten-2">
+          <i class="material-icons">attach_file</i>
+        </a>
+      </li>
+     </ul>
+   </div>
+
+<!-- posts-modal-->
+<div id="post-modal" class="modal">
+  <div class="modal-content">
+    <h4>Add Post</h4>
+    <form>
+      <div class="input-field">
+        <input type="text" id="title">
+        <label for="title">Title</label>
+      </div>
+      <div class="input-field">
+        <select>
+          <option value=""disabled selected>Select option</option>
+          <option value="1">Photos</option>
+          <option value="2">Videos</option>
+          <option value="3">File</option>
+        </select>
+        <label for="">Category</label>
+      </div>
+      <div class="input-field">
+        <textarea class="materialize-textarea"></textarea>
+      </div>
+      <div class="input-field">
+        <input type="text" class="datepicker">
+        <label for="date">Schedule</label>
+      </div>
+      <div class="input-field">
+        <input type="text" class="timepicker">
+        <label for="time">Time</label>
+      </div>
+      
+    </form>
+    <div class="modal-footer">
+      <a href="#" class="modal-action modal-close btn orange white-text">Submit</a>
+    </div>
+ </div>
+</div>
+
+  <!--Footer-->
+  <footer class="section orange darken-2 white-text center">
+    <p>© 2022 Say_Seichiee Copyright</p>
+  </footer>
+
+   <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="chart.js"></script>
+
+  <!--functions-->
+  <script>
+    // Hide Section
+   $('.section').hide();
+   
+    setTimeout(function() { 
+      $(document).ready(function(){
+         // Sidenav
+     $('.sidenav').sidenav({
+      edge: 'right',
+      inDuration: 1000,
+      outDuration: 1000
+    });
+    // Show Section
+    $('.section').fadeIn();
+    // Hide Preloader
+    $('.loader').fadeOut();
+    // Init Modal
+    $('.modal').modal();
+    // Init select
+    $('select').formSelect();
+
+    // Floating action button
+    $('.fixed-action-btn').floatingActionButton({
+      toolbarEnabled: true
+    });
+
+    // Quick Todos
+    $('#todo-form').submit(function(e) {
+        const output = `
+          <li class="collection-item">
+             <div>${$('#todo').val()}
+               <a href="#!" class="secondary-content delete">
+                 <i class="material-icons purple-text darken-2">close</i></a>
+             </div>
+           </li>
+
+    `;
+    console.log($('#todos').val());
+      $('.todos').append(output);
+
+      e.preventDefault();
+      });
+    
+    // Delete Todos
+    $('.todos').on('click','.delete', function() {
+      $(this).parent().parent().remove();
+
+    // Console.log(test) 
+    });
+
+    // Date Picker
+    $('.datepicker').datepicker();
+    // Time Picker
+    $('.timepicker').timepicker();
+
+    // Counter
+    $('.count').each(function() {
+      $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 10000,
+        easing: 'swing',
+        step: function(now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+     });
+    });
+    }, 1000);
+  </script>
+</body>
+</html>

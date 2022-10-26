@@ -1,0 +1,16 @@
+.toast { 
+    background-color: orange;
+}
+
+.loader { 
+   position: absolute;
+   top: 40%;
+   left: 47%;
+}
+
+
+
+.datepicker-date-display { 
+    background: #db861d;
+ }
+
